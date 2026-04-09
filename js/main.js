@@ -12,14 +12,36 @@ if (navbar) {
   onScroll();
 }
 
-// ── Active nav link ───────────────────────────────────────────
+// ── Active nav link (supports both single-page anchors and multi-page) ─
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-link').forEach(link => {
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Multi-page: highlight by filename
+navLinks.forEach(link => {
   const href = link.getAttribute('href') || '';
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+  if (!href.startsWith('#') && (href === currentPage || (currentPage === '' && href === 'index.html'))) {
     link.classList.add('active');
   }
 });
+
+// Single-page: highlight by scroll position
+const anchorSections = document.querySelectorAll('section[id]');
+if (anchorSections.length) {
+  const updateActiveAnchor = () => {
+    let active = '';
+    anchorSections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 90) active = s.id;
+    });
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      if (href.startsWith('#')) {
+        link.classList.toggle('active', href === '#' + active);
+      }
+    });
+  };
+  window.addEventListener('scroll', updateActiveAnchor, { passive: true });
+  updateActiveAnchor();
+}
 
 // ── Mobile nav toggle ─────────────────────────────────────────
 const hamburger = document.querySelector('.hamburger');

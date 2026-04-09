@@ -3,334 +3,568 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa Jimmy Studios — Where Sound Becomes Art</title>
-  <meta name="description" content="Professional recording studio offering world-class recording, mixing, mastering, and music production services." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Casa Jimmy Studios — Costa Rica's premier professional recording studio. Recording, mixing, mastering, music production, video production, and design services." />
+  <title>Casa Jimmy Studios | Professional Recording Studio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ── NAVBAR ── -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="nav-logo">
-      <div class="nav-logo-icon">CJ</div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">Casa Jimmy</span>
-        <span class="nav-logo-sub">Studios</span>
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="Casa Jimmy Studios Home">
+      <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+      <div>
+        <span class="logo-name">Casa Jimmy</span>
+        <span class="logo-sub">Studios</span>
       </div>
     </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="services.html" class="nav-link">Services</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
+    <ul class="nav-links" role="list">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#studio" class="nav-link">Studio</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Calendar</a></li>
     </ul>
 
-    <a href="booking.html" class="nav-cta">Book a Session</a>
-
-    <button class="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
+    <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </nav>
 
   <!-- Mobile Nav -->
-  <div class="mobile-nav">
-    <a href="index.html" class="mobile-nav-link">Home</a>
-    <a href="services.html" class="mobile-nav-link">Services</a>
-    <a href="about.html" class="mobile-nav-link">About</a>
-    <a href="booking.html" class="mobile-nav-cta">Book a Session</a>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#studio" class="mobile-nav-link">Studio</a></li>
+      <li><a href="#team" class="mobile-nav-link">Team</a></li>
+      <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="#contact" class="mobile-nav-cta">Contact / Calendar</a></li>
+    </ul>
   </div>
 
+  <main>
 
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-noise"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <div class="hero-eyebrow-line"></div>
-          <span>Professional Recording Studio</span>
+    <!-- ===========================
+         HERO (#home)
+    =========================== -->
+    <section id="home" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="hero-content fade-up">
+          <p class="hero-eyebrow">Professional Recording Studio</p>
+          <h1 class="hero-title">RECORDING STUDIOS</h1>
+          <p class="hero-desc">Transforming your ideas into reality through creative, professional production and years of experience!</p>
+          <div class="hero-actions">
+            <a href="#studio" class="btn btn-primary">The Studio</a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+          </div>
         </div>
-        <h1>Where Sound<br>Becomes <em>Art</em></h1>
-        <p class="hero-desc">
-          Casa Jimmy Studios is your premier destination for recording, mixing,
-          mastering, and music production. Bring your vision — we'll make it sonically extraordinary.
-        </p>
-        <div class="hero-actions">
-          <a href="booking.html" class="btn btn-primary">
-            <i class="fa-regular fa-calendar"></i> Book a Session
-          </a>
-          <a href="services.html" class="btn btn-ghost">
-            Explore Services <i class="fa-solid fa-arrow-right"></i>
-          </a>
+
+        <div class="hero-image-wrap fade-up">
+          <div class="hero-image-frame">
+            <div class="hero-img-placeholder">
+              <i class="fa-solid fa-camera" aria-hidden="true"></i>
+              <span>Studio Photo Here</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <i class="fa-solid fa-chevron-down"></i>
-    </div>
-  </section>
+    </section>
 
+    <!-- ===========================
+         ABOUT (#about)
+    =========================== -->
+    <section id="about" aria-label="About Casa Jimmy Studios">
+      <div class="about-intro text-center fade-up">
+        <h2>CASA JIMMY STUDIOS</h2>
+        <p>Casa Jimmy Studios is a full-service creative powerhouse built for musicians, by musicians. Founded with a passion for sound, vision, and storytelling, we provide professional recording, mixing, video production, and design services all under one roof. Whether you're an emerging artist or a seasoned performer, our mission is to help you create, elevate, and share your music with the world – authentically and professionally. Welcome to your creative home.</p>
+      </div>
 
-  <!-- ── STATS BAR ── -->
-  <div class="stats-bar">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number" data-target="10" data-suffix="+">0+</div>
-          <div class="stat-label">Years of Experience</div>
+      <div class="about-split fade-up">
+        <div class="about-photo">
+          <div class="about-photo-placeholder">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <span>Jimmy Gentry Photo Here</span>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="500" data-suffix="+">0+</div>
-          <div class="stat-label">Artists Worked With</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="1200" data-suffix="+">0+</div>
-          <div class="stat-label">Tracks Produced</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="5">0</div>
-          <div class="stat-label">Studio Rooms</div>
+
+        <div class="about-content">
+          <p class="section-label">CJS</p>
+          <h2 class="section-title">PROFESSIONAL RECORDING STUDIO</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p>At CJS, we understand that making music isn't just about lyrics and chords; it's a whole new world. Achieving a great sound requires a true professional, finding the right melody, selecting the right microphone for your voice or instrument, and ensuring the production enhances the song. You can be sure we'll help you with all of that and more!</p>
+          <p class="studio-sub-title">Welcome to Sonic Paradise</p>
+          <div class="studio-sub-image">
+            <i class="fa-regular fa-image" aria-hidden="true"></i>
+            <span>Studio Interior Photo</span>
+          </div>
+          <a href="#contact" class="btn btn-outline">Book a Session</a>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
+    <!-- ===========================
+         STUDIO (#studio)
+    =========================== -->
+    <section id="studio" aria-label="Our Studio">
+      <div class="text-center fade-up">
+        <p class="section-label">The Space</p>
+        <h2 class="section-title">Our Studio</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-sub">Purpose-built for professional recording — every room, every piece of gear, every detail designed with your music in mind.</p>
+      </div>
 
-  <!-- ── SERVICES PREVIEW ── -->
-  <section class="services-preview">
-    <div class="container">
-      <div class="text-center">
-        <span class="section-label">What We Offer</span>
-        <h2 class="section-title">Studio Services</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-          From raw demo to radio-ready release, our team provides every service
-          you need to craft a professional, compelling sound.
-        </p>
+      <div class="studio-grid">
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3>Tracking Rooms</h3>
+          <p>Acoustically treated tracking rooms for pristine vocal and instrument recording, equipped with world-class microphones and preamps.</p>
+        </div>
+
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <h3>Control Room</h3>
+          <p>Hybrid analog/digital workflow with Neve, API, and Universal Audio outboard gear driving every mix session.</p>
+        </div>
+
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <h3>Live Room</h3>
+          <p>Our live room handles everything from intimate solo sessions to full band recordings with isolation booths for separation.</p>
+        </div>
+
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-compact-disc"></i>
+          </div>
+          <h3>Mastering Suite</h3>
+          <p>Dedicated mastering environment with reference monitoring optimized for loudness and translation across all platforms.</p>
+        </div>
+
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-podcast"></i>
+          </div>
+          <h3>Broadcast Booth</h3>
+          <p>Purpose-built for crystal-clear podcast and voiceover recording — silent, treated, and broadcast-ready.</p>
+        </div>
+
+        <div class="studio-card fade-up">
+          <div class="studio-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <h3>Remote Sessions</h3>
+          <p>Source-Connect and Zoom enabled — record from anywhere, directed in real time by our engineers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         TEAM (#team)
+    =========================== -->
+    <section id="team" aria-label="Meet the Team">
+      <div class="text-center fade-up">
+        <p class="section-label">The People</p>
+        <h2 class="section-title">Meet the Team</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-sub">Experienced engineers, producers, and creators — all dedicated to making your music extraordinary.</p>
+      </div>
+
+      <div class="team-cards">
+
+        <!-- Jimmy Gentry -->
+        <div class="team-card fade-up">
+          <div class="team-card-body">
+            <h3 class="team-card-name">Jimmy Gentry</h3>
+            <div class="team-card-sep" aria-hidden="true"></div>
+            <div class="team-card-bio">
+              <p>Jimmy Gentry is the visionary founder of Casa Jimmy Studios — a musician, producer, and engineer whose passion for sound has shaped the studio into the creative powerhouse it is today. With decades of experience spanning multiple genres, Jimmy brings an unmatched depth of knowledge to every project that walks through the door.</p>
+              <p>His hands-on approach ensures that every artist who records at CJS receives the personal attention and professional expertise their music deserves. For Jimmy, it's never just about the recording — it's about capturing something real.</p>
+            </div>
+            <p class="team-card-roles">Founder &amp; Owner &bull; Producer &bull; Engineer &bull; Musician</p>
+          </div>
+          <div class="team-card-photo">
+            <div class="team-photo-placeholder">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Jimmy Gentry Photo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frank Loyal -->
+        <div class="team-card fade-up">
+          <div class="team-card-body">
+            <h3 class="team-card-name">Frank Loyal</h3>
+            <div class="team-card-sep" aria-hidden="true"></div>
+            <div class="team-card-bio">
+              <p>Frank Loyal is a seasoned multi-instrumentalist and creative force in the world of rock and beyond. Primarily known for his electrifying guitar work and commanding vocal presence, Frank brings a powerful blend of talent, passion, and experience to every stage and studio session. His musical arsenal spans guitar, vocals, bass, production, engineering, composition, beat-making, and intricate musical arrangements.</p>
+              <p>As the frontman, lead vocalist, and guitarist for his flagship project G&euml;ntry, Frank channels a raw, hard-hitting rock energy that defines his signature sound. Beyond G&euml;ntry, he's also contributed to a range of dynamic acts including Mustang 65, Peacemaker, Adrenal, Boogie Chillin, Traffic Jam, Frank Loyal, and Mario Maissonave, showcasing his versatility across genres and roles.</p>
+              <p>Whether he's crafting beats, arranging complex compositions, or igniting crowds on stage, Frank Loyal stands as a true architect of modern rock music — driven by authenticity, relentless creativity, and an unshakable love for the craft.</p>
+            </div>
+            <p class="team-card-roles">Management &bull; Musician &bull; Composer &bull; Producer &bull; Frontman</p>
+          </div>
+          <div class="team-card-photo">
+            <div class="team-photo-placeholder">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Frank Loyal Photo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Erik Reinhold -->
+        <div class="team-card fade-up">
+          <div class="team-card-body">
+            <h3 class="team-card-name">Erik Reinhold</h3>
+            <div class="team-card-sep" aria-hidden="true"></div>
+            <div class="team-card-bio">
+              <p>Born in Amsterdam in 1962, Erik Reinhold has been a permanent resident of Costa Rica since 1992. He is the founder and principal of Reinhold y Asociados, a respected consulting firm that specializes in representing foreign investors and managing complex development projects throughout the region. His firm is known for delivering strategic guidance and hands-on project oversight, helping international clients navigate Costa Rica's business and regulatory landscape.</p>
+              <p><a href="http://www.reinholdyasociados.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">www.reinholdyasociados.com</a></p>
+              <p>Erik is also a long-time friend of Casa Jimmy Studios founder, Jimmy Gentry, and shares a deep passion for music. A semi-professional musician, he plays guitar and sings, performing regularly with local bands Traffic Jam and General Lee. Since 2005, Erik has been organizing weekly jam sessions — first at The Whiskey Bar &amp; Grill and, since 2019, at Casa Jimmy Studios, where his love for music and community continues to thrive.</p>
+            </div>
+            <p class="team-card-roles">Owner's Representative &bull; Project Manager &bull; Music Enthusiast</p>
+          </div>
+          <div class="team-card-photo">
+            <div class="team-photo-placeholder">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Erik Reinhold Photo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Angelique Sain -->
+        <div class="team-card fade-up">
+          <div class="team-card-body">
+            <h3 class="team-card-name">Angelique Sain</h3>
+            <div class="team-card-sep" aria-hidden="true"></div>
+            <div class="team-card-bio">
+              <p>From an early age, Angelique immersed herself in music, visual arts, dance, and all forms of creative expression. Her passion for the arts has shaped her journey as both an artist and a creative professional, influencing everything she creates, from music to design and digital content.</p>
+              <p>As a musician herself, she knows just how important a good studio is to the creative process. In 2018, she came across Casa Jimmy Studios and instantly felt something different. After recording some of her own songs there, she knew it was a place worth sharing. Today, she brings that same passion into her role, helping others discover just how special the studio truly is.</p>
+              <p>Now, as the studio's Marketing &amp; Social Media Manager, she brings her creative energy to every project — whether it's developing content, planning events, or shaping marketing strategies. To her, Casa Jimmy isn't just a studio — it's home, a place to connect, create, and feel inspired, and everyone's welcome to come by, plug in, and jam for a while.</p>
+            </div>
+            <p class="team-card-roles">Marketing &amp; Social Media Manager &bull; Content Creator &bull; Musician</p>
+          </div>
+          <div class="team-card-photo">
+            <div class="team-photo-placeholder">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Angelique Sain Photo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================
+         SERVICES (#services)
+    =========================== -->
+    <section id="services" aria-label="Our Services">
+      <div class="text-center fade-up">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">Our Services</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-sub">From raw idea to polished release — every service you need, all under one roof.</p>
       </div>
 
       <div class="services-grid">
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-microphone"></i></div>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
           <h3>Recording</h3>
-          <p>
-            State-of-the-art recording rooms equipped with world-class microphones,
-            preamps, and acoustic treatment for pristine vocal and instrument captures.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <p>State-of-the-art recording for vocals, instruments, and full band sessions — captured with world-class microphones and acoustic excellence.</p>
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-sliders"></i></div>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
           <h3>Mixing</h3>
-          <p>
-            Our engineers bring balance, depth, and emotion to your tracks —
-            crafting mixes that translate flawlessly across every speaker and platform.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <p>Our engineers blend your tracks with precision and feel — crafting mixes that hit hard and translate across every speaker.</p>
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-compact-disc"></i></div>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-compact-disc"></i>
+          </div>
           <h3>Mastering</h3>
-          <p>
-            The final polish. We optimize your music for streaming, vinyl, and CD —
-            delivering loudness, clarity, and consistency for every platform.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <p>The final polish. We optimize for streaming, vinyl, and CD, delivering loudness, clarity, and consistency for every platform.</p>
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-music"></i></div>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-music"></i>
+          </div>
           <h3>Music Production</h3>
-          <p>
-            Collaborate with our in-house producers to develop beats, arrangements,
-            and sonic landscapes that elevate your artistic identity.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <p>Collaborate with our in-house producers to develop beats, arrangements, and sonic landscapes that define your sound.</p>
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-podcast"></i></div>
-          <h3>Podcast &amp; Voiceover</h3>
-          <p>
-            Crystal-clear podcast recording and professional voiceover sessions
-            in our dedicated broadcast-quality booth.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <h3>Video Production</h3>
+          <p>From music videos to promotional content — visual storytelling that matches the power of your music.</p>
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-film"></i></div>
-          <h3>Sync &amp; Scoring</h3>
-          <p>
-            Cinematic scores, commercial sync licensing, and post-production audio —
-            we bring picture to life with expertly crafted sound design.
-          </p>
-          <a href="services.html" class="service-card-link">
-            Learn More <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Design Services</h3>
+          <p>Artwork, branding, and visual identity — we craft the look that makes your music unforgettable.</p>
         </div>
       </div>
 
-      <div style="text-align:center; margin-top: 48px;">
-        <a href="services.html" class="btn btn-outline">View All Services &amp; Pricing</a>
+      <div class="services-cta text-center fade-up">
+        <a href="services.html" class="btn btn-outline">View All Services</a>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CTA BANNER
+    =========================== -->
+    <div class="cta-banner" aria-label="Book a session call to action">
+      <div class="cta-banner-inner fade-up">
+        <p class="section-label">Get Started</p>
+        <h2>Ready to Make Your Next Record?</h2>
+        <p>Sessions are filling up fast. Reserve your studio time today and let's create something extraordinary together.</p>
+        <a href="#contact" class="btn btn-primary">Book Your Session</a>
       </div>
     </div>
-  </section>
 
-
-  <!-- ── ABOUT PREVIEW ── -->
-  <section class="about-preview">
-    <div class="container">
-      <div class="about-split">
-        <div class="about-image-wrapper fade-up">
-          <div class="about-image-box">
-            <!-- Replace with: <img src="images/studio-main.jpg" alt="Casa Jimmy Studios" /> -->
-            <div class="about-image-placeholder">
-              <i class="fa-solid fa-image"></i>
-              <span>Studio Photo Here</span>
-            </div>
-          </div>
-          <div class="about-accent-box"></div>
-        </div>
-
-        <div class="about-content fade-up">
-          <span class="section-label">Our Story</span>
-          <h2 class="section-title">Built by<br>Musicians,<br>for Musicians</h2>
-          <div class="divider"></div>
-          <p class="section-subtitle">
-            Casa Jimmy Studios was founded on a simple belief: every artist deserves
-            a space where creativity flows freely, backed by the tools and expertise
-            to make great music a reality.
-          </p>
-
-          <div class="about-features">
-            <div class="about-feature">
-              <i class="fa-solid fa-check-circle"></i>
-              <span>Fully treated recording rooms with professional acoustics</span>
-            </div>
-            <div class="about-feature">
-              <i class="fa-solid fa-check-circle"></i>
-              <span>Experienced engineers with major-label credits</span>
-            </div>
-            <div class="about-feature">
-              <i class="fa-solid fa-check-circle"></i>
-              <span>Flexible booking — hourly, daily, and package rates</span>
-            </div>
-            <div class="about-feature">
-              <i class="fa-solid fa-check-circle"></i>
-              <span>Welcoming environment for artists at every level</span>
-            </div>
-          </div>
-
-          <a href="about.html" class="btn btn-outline">Meet the Team</a>
-        </div>
+    <!-- ===========================
+         CONTACT (#contact)
+    =========================== -->
+    <section id="contact" aria-label="Contact and Booking">
+      <div class="text-center fade-up">
+        <p class="section-label">Reserve Your Time</p>
+        <h2 class="section-title">Contact / Calendar</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-sub">Book your session or reach out — we'll get back within 24 hours.</p>
       </div>
-    </div>
-  </section>
 
+      <div class="contact-layout">
 
-  <!-- ── CTA BANNER ── -->
-  <section class="cta-banner">
-    <div class="container">
-      <div class="cta-banner-content fade-up">
-        <span class="section-label">Get Started</span>
-        <h2>Ready to Make<br>Your Next Record?</h2>
-        <p>
-          Sessions are filling up fast. Reserve your studio time today and
-          let's create something extraordinary together.
-        </p>
-        <a href="booking.html" class="btn btn-primary" style="font-size:13px; padding:16px 40px;">
-          <i class="fa-regular fa-calendar"></i> Book Your Session
+        <!-- Booking Form -->
+        <div class="booking-form" id="bookingFormWrapper">
+
+          <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+            <div class="success-icon" aria-hidden="true">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="success-title">Request Received!</h3>
+            <p class="success-msg">Thank you! We'll review your booking and get back to you within 24 hours to confirm your session.</p>
+          </div>
+
+          <div class="form-inner" id="formInner">
+            <form id="bookingForm" novalidate>
+              <h3>Session Request</h3>
+              <p class="form-note">Fields marked * are required.</p>
+
+              <!-- Service Options -->
+              <div class="service-options" role="group" aria-label="Select a service">
+                <label class="service-option">
+                  <input type="radio" name="service" value="Recording" required />
+                  <span class="service-option-label">Recording</span>
+                </label>
+                <label class="service-option">
+                  <input type="radio" name="service" value="Mixing" />
+                  <span class="service-option-label">Mixing</span>
+                </label>
+                <label class="service-option">
+                  <input type="radio" name="service" value="Mastering" />
+                  <span class="service-option-label">Mastering</span>
+                </label>
+                <label class="service-option">
+                  <input type="radio" name="service" value="Music Production" />
+                  <span class="service-option-label">Music Production</span>
+                </label>
+                <label class="service-option">
+                  <input type="radio" name="service" value="Video Production" />
+                  <span class="service-option-label">Video Production</span>
+                </label>
+                <label class="service-option">
+                  <input type="radio" name="service" value="Other" />
+                  <span class="service-option-label">Other</span>
+                </label>
+              </div>
+
+              <!-- Form Grid -->
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">First Name *</label>
+                  <input class="form-input" type="text" id="firstName" name="firstName" placeholder="First Name" required autocomplete="given-name" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Last Name *</label>
+                  <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Last Name" required autocomplete="family-name" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">Email *</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="preferredDate">Preferred Date *</label>
+                  <input class="form-input" type="date" id="preferredDate" name="preferredDate" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="sessionLength">Session Length</label>
+                  <select class="form-select" id="sessionLength" name="sessionLength">
+                    <option value="" disabled selected>Select length</option>
+                    <option value="2hr">2 Hours</option>
+                    <option value="4hr">4 Hours</option>
+                    <option value="8hr">8 Hours</option>
+                    <option value="multiday">Multi-Day</option>
+                    <option value="notsure">Not Sure</option>
+                  </select>
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="projectDetails">Project Details *</label>
+                  <textarea class="form-textarea" id="projectDetails" name="projectDetails" rows="5" placeholder="Tell us about your project, your goals, and anything else we should know..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">Send Request</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="contact-sidebar" aria-label="Contact information">
+
+          <div class="sidebar-card">
+            <h4 class="sidebar-title">Get In Touch</h4>
+            <div class="sidebar-item">
+              <span class="sidebar-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+15550000000">(555) 000-0000</a>
+            </div>
+            <div class="sidebar-item">
+              <span class="sidebar-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:info@casajimmystudios.com">info@casajimmystudios.com</a>
+            </div>
+            <div class="sidebar-item">
+              <span class="sidebar-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Costa Rica</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h4 class="sidebar-title">Studio Hours</h4>
+            <div class="hours-row">
+              <span>Mon – Fri</span>
+              <span>10am – 10pm</span>
+            </div>
+            <div class="hours-row">
+              <span>Saturday</span>
+              <span>10am – 8pm</span>
+            </div>
+            <div class="hours-row">
+              <span>Sunday</span>
+              <span>By Appointment</span>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" aria-label="Casa Jimmy Studios">
+          <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+          <div>
+            <span class="logo-name">Casa Jimmy</span>
+            <span class="logo-sub">Studios</span>
+          </div>
         </a>
+        <p>A creative powerhouse built for musicians, by musicians. Costa Rica's premier recording studio.</p>
       </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="services.html">Recording</a></li>
+          <li><a href="services.html">Mixing</a></li>
+          <li><a href="services.html">Mastering</a></li>
+          <li><a href="services.html">Music Production</a></li>
+          <li><a href="services.html">Video Production</a></li>
+          <li><a href="services.html">Design Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-contact" role="list">
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Costa Rica</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+15550000000">(555) 000-0000</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:info@casajimmystudios.com">info@casajimmystudios.com</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </section>
 
-
-  <!-- ── FOOTER ── -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <div class="nav-logo-icon">CJ</div>
-            <div class="nav-logo-text">
-              <span class="nav-logo-name">Casa Jimmy</span>
-              <span class="nav-logo-sub">Studios</span>
-            </div>
-          </a>
-          <p>
-            A world-class recording studio committed to helping artists realize
-            their vision and share their music with the world.
-          </p>
-        </div>
-
-        <div>
-          <div class="footer-heading">Navigation</div>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="booking.html">Book a Session</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-heading">Services</div>
-          <ul class="footer-links">
-            <li><a href="services.html">Recording</a></li>
-            <li><a href="services.html">Mixing</a></li>
-            <li><a href="services.html">Mastering</a></li>
-            <li><a href="services.html">Music Production</a></li>
-            <li><a href="services.html">Podcast &amp; Voiceover</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-heading">Contact</div>
-          <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <!-- Update with your address -->
-              123 Studio Lane, Music City, TX 77000
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <!-- Update with your phone -->
-              (555) 000-0000
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <!-- Update with your email -->
-              info@casajimmystudios.com
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2025 Casa Jimmy Studios. All rights reserved.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
-        </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Casa Jimmy Studios. All rights reserved.</p>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Watch us on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Listen on Spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
