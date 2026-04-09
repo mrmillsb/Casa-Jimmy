@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session — Casa Jimmy Studios</title>
+  <meta name="description" content="Book your recording, mixing, mastering, or production session at Casa Jimmy Studios." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" role="navigation">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">CJ</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Casa Jimmy</span>
+        <span class="nav-logo-sub">Studios</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+    </ul>
+    <a href="booking.html" class="nav-cta">Book a Session</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="booking.html" class="mobile-nav-cta">Book a Session</a>
+  </div>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="container page-hero-content">
+      <span class="section-label">Reserve Your Time</span>
+      <h1>Book a Session</h1>
+      <p>Fill out the form below and we'll confirm your booking within 24 hours.</p>
+    </div>
+  </div>
+
+
+  <!-- ── BOOKING SECTION ── -->
+  <section class="booking-form-section">
+    <div class="container">
+      <div class="booking-layout">
+
+        <!-- ── FORM ── -->
+        <div>
+          <div class="booking-form" id="bookingFormWrapper">
+
+            <!-- Success State (shown after submit) -->
+            <div class="form-success">
+              <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h2 class="success-title">Request Received!</h2>
+              <p class="success-msg">
+                Thank you for reaching out. We'll review your booking request and
+                get back to you within 24 hours to confirm your session details.
+              </p>
+              <a href="index.html" class="btn btn-outline" style="margin-top: 28px;">
+                Back to Home
+              </a>
+            </div>
+
+            <!-- Form Content -->
+            <div class="booking-form-inner">
+              <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 500; margin-bottom: 8px;">
+                Session Request
+              </h2>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 36px;">
+                All fields marked with * are required. We'll reach out within 24 hours to confirm.
+              </p>
+
+              <form id="bookingForm" novalidate>
+
+                <!-- Service Selection -->
+                <div style="margin-bottom: 32px;">
+                  <div class="form-label" style="margin-bottom: 16px;">Select a Service *</div>
+                  <div class="service-options">
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="recording" required />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-microphone"></i>
+                        Recording
+                      </span>
+                    </label>
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="mixing" />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-sliders"></i>
+                        Mixing
+                      </span>
+                    </label>
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="mastering" />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        Mastering
+                      </span>
+                    </label>
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="production" />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-music"></i>
+                        Music Production
+                      </span>
+                    </label>
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="podcast" />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-podcast"></i>
+                        Podcast / Voiceover
+                      </span>
+                    </label>
+
+                    <label class="service-option">
+                      <input type="radio" name="service" value="other" />
+                      <span class="service-option-label">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        Other / Not Sure
+                      </span>
+                    </label>
+
+                  </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="firstName">First Name *</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Your first name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="lastName">Last Name *</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Your last name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email Address *</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input
+                      class="form-input"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="(555) 000-0000"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="preferredDate">Preferred Date *</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      id="preferredDate"
+                      name="preferredDate"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="sessionLength">Session Length</label>
+                    <select class="form-select" id="sessionLength" name="sessionLength">
+                      <option value="" disabled selected>Select length</option>
+                      <option value="2">2 Hours</option>
+                      <option value="4">4 Hours (Half Day)</option>
+                      <option value="8">8 Hours (Full Day)</option>
+                      <option value="multi">Multi-Day</option>
+                      <option value="unsure">Not Sure</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="budget">Approximate Budget</label>
+                    <select class="form-select" id="budget" name="budget">
+                      <option value="" disabled selected>Select range</option>
+                      <option value="under200">Under $200</option>
+                      <option value="200-500">$200 – $500</option>
+                      <option value="500-1000">$500 – $1,000</option>
+                      <option value="1000-2500">$1,000 – $2,500</option>
+                      <option value="2500+">$2,500+</option>
+                      <option value="discuss">Let's Discuss</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="genre">Genre / Style</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="genre"
+                      name="genre"
+                      placeholder="e.g. Hip-Hop, R&B, Rock..."
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label class="form-label" for="projectDetails">Project Details *</label>
+                    <textarea
+                      class="form-textarea"
+                      id="projectDetails"
+                      name="projectDetails"
+                      placeholder="Tell us about your project — what are you working on, what's the vision, any special requirements?"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label class="form-label" for="heardFrom">How did you hear about us?</label>
+                    <select class="form-select" id="heardFrom" name="heardFrom">
+                      <option value="" disabled selected>Select one</option>
+                      <option value="instagram">Instagram</option>
+                      <option value="facebook">Facebook</option>
+                      <option value="google">Google Search</option>
+                      <option value="referral">Friend / Artist Referral</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!--
+                  ════════════════════════════════════════════════════
+                  FORM SUBMISSION SETUP
+                  To actually send this form, connect it to one of:
+
+                  Option A — Formspree (free tier available):
+                    1. Sign up at https://formspree.io
+                    2. Create a form and get your endpoint URL
+                    3. In js/main.js, replace the setTimeout simulation
+                       with: fetch('https://formspree.io/f/YOUR_ID', {...})
+
+                  Option B — EmailJS (free tier available):
+                    1. Sign up at https://emailjs.com
+                    2. Add emailjs SDK and call emailjs.send(...)
+
+                  Option C — Netlify Forms (if hosted on Netlify):
+                    1. Add  data-netlify="true"  to the <form> tag
+                    2. Netlify will automatically handle submissions
+
+                  Option D — Custom backend:
+                    POST to your own API endpoint
+                  ════════════════════════════════════════════════════
+                -->
+
+                <button type="submit" class="form-submit">
+                  Send Booking Request
+                </button>
+
+                <p style="text-align:center; margin-top: 16px; font-size: 0.8rem; color: var(--text-muted);">
+                  <i class="fa-solid fa-lock" style="color:var(--accent); margin-right:6px;"></i>
+                  Your information is private and never shared with third parties.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ── SIDEBAR ── -->
+        <div class="booking-sidebar">
+
+          <!-- Contact Info -->
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">Get in Touch</div>
+
+            <div class="sidebar-contact-item">
+              <div class="sidebar-contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <strong style="display:block; font-size:0.875rem; margin-bottom:2px;">Call Us</strong>
+                <!-- Update phone number -->
+                <span>(555) 000-0000</span>
+              </div>
+            </div>
+
+            <div class="sidebar-contact-item">
+              <div class="sidebar-contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <strong style="display:block; font-size:0.875rem; margin-bottom:2px;">Email Us</strong>
+                <!-- Update email -->
+                <span>info@casajimmystudios.com</span>
+              </div>
+            </div>
+
+            <div class="sidebar-contact-item">
+              <div class="sidebar-contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong style="display:block; font-size:0.875rem; margin-bottom:2px;">Studio Location</strong>
+                <!-- Update address -->
+                <span>123 Studio Lane<br>Music City, TX 77000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">Studio Hours</div>
+            <div>
+              <div class="sidebar-hours-item">
+                <span class="sidebar-hours-day">Monday – Friday</span>
+                <span class="sidebar-hours-time">10am – 10pm</span>
+              </div>
+              <div class="sidebar-hours-item">
+                <span class="sidebar-hours-day">Saturday</span>
+                <span class="sidebar-hours-time">10am – 8pm</span>
+              </div>
+              <div class="sidebar-hours-item">
+                <span class="sidebar-hours-day">Sunday</span>
+                <span class="sidebar-hours-time">By Appointment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Booking Process -->
+          <div class="sidebar-card">
+            <div class="sidebar-card-title">How It Works</div>
+            <div class="sidebar-process-list">
+              <div class="sidebar-process-item">
+                <div class="process-num">1</div>
+                <div class="process-text">
+                  <h5>Submit Your Request</h5>
+                  <p>Fill out the form with your project details and preferred dates.</p>
+                </div>
+              </div>
+              <div class="sidebar-process-item">
+                <div class="process-num">2</div>
+                <div class="process-text">
+                  <h5>We Confirm</h5>
+                  <p>Our team reviews your request and confirms availability within 24 hours.</p>
+                </div>
+              </div>
+              <div class="sidebar-process-item">
+                <div class="process-num">3</div>
+                <div class="process-text">
+                  <h5>Deposit &amp; Schedule</h5>
+                  <p>A deposit secures your session date on the studio calendar.</p>
+                </div>
+              </div>
+              <div class="sidebar-process-item">
+                <div class="process-num">4</div>
+                <div class="process-text">
+                  <h5>Come Record</h5>
+                  <p>Show up ready to create — we'll handle everything else.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end sidebar -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">CJ</div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Casa Jimmy</span>
+              <span class="nav-logo-sub">Studios</span>
+            </div>
+          </a>
+          <p>A world-class recording studio committed to helping artists realize their vision.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="booking.html">Book a Session</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Recording</a></li>
+            <li><a href="services.html">Mixing</a></li>
+            <li><a href="services.html">Mastering</a></li>
+            <li><a href="services.html">Music Production</a></li>
+            <li><a href="services.html">Podcast &amp; Voiceover</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i>123 Studio Lane, Music City, TX 77000</li>
+            <li><i class="fa-solid fa-phone"></i>(555) 000-0000</li>
+            <li><i class="fa-solid fa-envelope"></i>info@casajimmystudios.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Casa Jimmy Studios. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
